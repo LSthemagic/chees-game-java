@@ -19,4 +19,9 @@ public class Rook extends ChessPiece {
         return "R";
     }
 
+    @Override
+    public boolean[][] possibleMoves() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }

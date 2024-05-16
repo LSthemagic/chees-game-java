@@ -50,6 +50,9 @@ public class ChessMatch {
         if(!board.thereIsAPiece(position)){
             throw new ChessException("Piece not exists");
         }
+        if(!board.piece(position).isThereAnyPossibleMove()){
+            throw new ChessException("There is no possible movies for the chosen piece");
+        }
     }
 
     private void placeNewPiece(ChessPiece piece, char column, int row) {
