@@ -30,6 +30,10 @@ public class ChessMatch {
         initialSetup();
     }
 
+    public Piece getEnPassantVulnerable(){
+        return null;
+    }
+    
     public int getTurn() {
         return turn;
     }
@@ -108,7 +112,7 @@ public class ChessMatch {
             piecesOnTheBoard.add(capturedPiece);
         }
     }
-
+    
     private void validateSourcePosition(Position position) {
         if (!board.thereIsAPiece(position)) {
             throw new ChessException("Piece not exists");
